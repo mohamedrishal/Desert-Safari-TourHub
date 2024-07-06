@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+.packages {
+  margin-top: 22rem;
+}
+
+.profile {
+  line-height: 2rem;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+}
+
+.slider {
+  padding: 3rem 0px 0px;
+  position: relative;
+}
+
+.slider h2 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 500;
+  color: goldenrod;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .packages {
+    margin-top: 0;
+  }
+}

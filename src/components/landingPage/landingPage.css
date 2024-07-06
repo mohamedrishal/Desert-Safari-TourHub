@@ -1,0 +1,100 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 94vh; /* Make the banner full height */
+  overflow: hidden;
+  /* clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%); */
+}
+
+.banner-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place the video behind other content */
+}
+
+.banner-content {
+  width: 100%;
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.banner-content h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.banner-content p {
+  font-size: 1.5rem;
+  color: #ffffffcc;
+}
+
+/* Medium devices (tablets, 992px and below) */
+@media (max-width: 992px) {
+  .banner-content h1 {
+    font-size: 3.5rem;
+  }
+  .banner-content p {
+    font-size: 1.25rem;
+  }
+}
+
+/* Small devices (landscape phones, 768px and below) */
+@media (max-width: 768px) {
+  .banner-content h1 {
+    font-size: 3rem;
+  }
+  .banner-content p {
+    font-size: 1.125rem;
+  }
+}
+
+/* Extra small devices (portrait phones, 576px and below) */
+@media (max-width: 576px) {
+  .banner-content h1 {
+    font-size: 2.5rem;
+  }
+  .banner-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Very small devices (400px and below) */
+@media (max-width: 400px) {
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+  .banner-content p {
+    font-size: 0.875rem; /* 14px */
+  }
+}
+
+.two-cards {
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.second-align {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .two-cards {
+    position: relative;
+    top: 30rem;
+    left: 50%;
+  }
+}

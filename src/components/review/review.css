@@ -1,0 +1,98 @@
+.review {
+  background-color: rgb(25, 25, 78);
+  padding: 20px 0;
+}
+
+.review-container {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.first-review-container {
+  width: 100%;
+  padding: 2.5rem 20px !important;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 22.5rem;
+  background-color: rgba(0, 0, 0, 0.2) !important; /* Black with transparency */
+  backdrop-filter: blur(10px); /* Blur effect */
+  color: white; /* Ensure text is visible on dark background */
+}
+
+
+.rating-text {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.rating-stars {
+  color: #d5ab55;
+  font-size: 1.5rem;
+}
+
+.rating-score {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+@media (max-width: 576px) {
+  .review-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .first-review-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .first-review-container {
+    max-width: 100%;
+  }
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.google-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.title {
+  font-size: 24px;
+  margin: 0;
+  color: #ffff;
+}
+
+.stars {
+  font-size: 24px;
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.star {
+  margin: 0 2px;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #ffff;
+}
+
+.link {
+  font-size: 14px;
+  color: #bbdefb; /* Adjust the link color as needed */
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

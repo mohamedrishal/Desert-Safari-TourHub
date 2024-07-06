@@ -1,0 +1,15 @@
+.footerHeding{
+    color: #c11f1c;
+    margin-top: 1.5rem;
+}
+
+.footer-a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-a:hover{
+
+    text-decoration: none;
+    color: rgb(190 97 3);
+}

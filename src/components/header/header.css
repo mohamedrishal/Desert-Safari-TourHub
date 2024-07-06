@@ -1,0 +1,123 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  padding: 0px 3rem;
+  transition: background-color 0.3s ease;
+}
+
+.header.scrolled,
+.header.toggled {
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the color and opacity as needed */
+  backdrop-filter: blur(10px);
+}
+
+.contact-icon {
+  background: #30a53e;
+  padding: 1rem 1.5rem;
+  border-radius: 40px;
+  color: white;
+}
+
+.nav-item {
+  color: #ffff !important;
+}
+
+.contact-icon {
+  background: #30a53e;
+  padding: 1rem 1.5rem;
+  border-radius: 40px;
+  color: white;
+}
+
+.nav-item {
+  color: #ffff !important;
+  font-size: 1rem !important;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease-in-out !important;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Change to your desired color */
+}
+
+.nav-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.watsp-sm {
+  display: none;
+}
+
+.watsp-lg {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header {
+    padding: 0px;
+  }
+
+  .nav-item {
+    font-size: 0.8rem !important;
+  }
+
+  .contact-icon {
+    padding: 0.9rem 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .watsp-sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .watsp-lg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .custom-toggle {
+    background: none;
+    border: none !important;
+    color: white !important;
+    outline: none !important;
+    font-size: 1.5rem; /* Adjust size as needed */
+    outline: none;
+    padding: 0.25rem 0.5rem; /* Adjust padding as needed */
+  }
+
+  .custom-toggle:focus {
+    outline: none !important; /* Remove outline on focus */
+    box-shadow: none !important; /* Remove box-shadow on focus */
+  }
+
+  .nav-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 130px !important;
+  }
+}
+
+
+@media only screen and (max-width: 352px) {
+  .logo {
+    width: 120px !important;
+  }
+
+  .nav-icon * {
+    font-size: 1.3rem !important;
+  }
+
+}

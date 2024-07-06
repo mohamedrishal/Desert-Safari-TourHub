@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.slider {
+  padding: 3rem 0px;
+  position: relative;
+}
+
+.swiper {
+  width: calc(100% - 40px);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+.swiper-slide {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  padding: 0 10px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 20px;
+  height: 20px;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for centering */
+  z-index: 10; /* Ensure buttons are above other elements */
+}
+
+.swiper-button-next {
+  right: 0; /* Position to the right */
+}
+
+.swiper-button-prev {
+  left: 0; /* Position to the left */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.tripCost-text {
+  background-color: rgb(246, 240, 240) !important;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  border-radius: 40px !important;
+  max-width: 100%; /* Ensure it doesn't exceed the screen width */
+  box-sizing: border-box;
+}
+
+.tripCost-text span {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "El Messiri", sans-serif;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-height {
+  height: 490px !important; /* Adjust the height as per your design needs */
+  display: flex;
+  flex-direction: column;
+}
+
+.card .card-img {
+  transition: transform 0.3s ease-in-out;
+  height: fit-content;
+  width: 100%;
+}
+
+.card .card-img:hover {
+  transform: scale(1.05); /* Scale up the image on hover */
+}
+
+
+.small-text {
+  font-size: 0.9rem; /* Adjust the size as needed */
+
+}
+
+.card-title {
+  font-family: "Noto Serif", serif;
+}
+
+@media (max-width: 768px) {
+  .small-text {
+    font-size: 0.8rem; /* Adjust the size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .small-text {
+    font-size: 0.7rem; /* Further adjust the size for extra small screens */
+  }
+}
+
+
+
+@media (max-width: 350px) {
+  .tripCost-text {
+    padding: 0.3rem 0.5rem; /* Reduce padding */
+    font-size: 0.9rem; /* Adjust font size if necessary */
+    width: 100%; /* Ensure it takes the full width */
+  }
+
+  .swiper-slide {
+    padding: 0 5px; /* Reduce padding to ensure proper alignment */
+  }
+}
+
+@media (max-width: 662px) {
+  .card-height {
+    height: auto !important;
+  }
+}
+
+/* Add media query for screens smaller than 350px */
+@media (max-width: 350px) {
+  .tripCost-text {
+    padding: 0.3rem 0.5rem; /* Reduce padding */
+    width: 100%; /* Ensure it takes the full width */
+  }
+
+  .tripCost-text span {
+    font-size: 0.9rem !important;
+  }
+
+  .swiper-slide {
+    padding: 0 5px; /* Reduce padding to ensure proper alignment */
+  }
+}

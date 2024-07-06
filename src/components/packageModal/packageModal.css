@@ -1,0 +1,32 @@
+.tripCost-text {
+    background-color: lightgray;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.tripCost-text span {
+   font-size: 1rem; 
+   font-weight: bold;
+}
+
+.small-text {
+    font-size: 1rem; /* Adjust the size as needed */
+  
+  }
+  
+  .card-title {
+    font-family: "Noto Serif", serif;
+  }
+  
+  @media (max-width: 768px) {
+    .small-text {
+      font-size: 0.9rem; /* Adjust the size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .small-text {
+      font-size: 0.8rem; /* Further adjust the size for extra small screens */
+    }
+  }
